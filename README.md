@@ -229,4 +229,4 @@ Content-Type: application/json
 * User register/login/logout to control access for create, edit, delete restaurant data. (Currently admin access only)
 
 ## License
-MIT License, see license.md for details
+GNU GENERAL PUBLIC LICENSE, see license.md for details
