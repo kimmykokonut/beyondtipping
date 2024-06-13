@@ -1,6 +1,7 @@
 import Bounded from "../components/Bounded";
 import Button from "../components/Button";
 import Heading from "../components/Heading";
+import foodPic from "../assets/img/food.jpg";
 
 const Hero = () => {
     return (
@@ -18,7 +19,7 @@ const Hero = () => {
                     </div>
 
                     <div className="md:col-span-1">
-                    <img src="src/assets/img/food.jpg" alt="Food" className="drop-shadow-xl max-w-4xl w-full" />
+                    <img src={foodPic} alt="Food" className="drop-shadow-xl max-w-4xl w-full" />
                     </div>
                 </div>
             </Bounded>
