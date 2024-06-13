@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "start-api": "cd api && source .venv/bin/activate && export FLASK_ENV=production && python -m flask --app api/index run -p 8000",
+    "start-api": "source .venv/bin/activate && cd api && export FLASK_ENV=production && python -m flask --app api/index run -p 8000",
     "flask-dev": "pip3 install -r requirements.txt && python -m flask --app api/index run -p 8000 --reload",
     "vite-dev": "vite",
     "dev": "concurrently \"vite\" \"npm run flask-dev\"",
