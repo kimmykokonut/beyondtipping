@@ -1,6 +1,6 @@
 import { createRestaurant } from "../api_helper";
 import { FormEvent } from 'react';
-import Heading from "./Heading";
+// import Heading from "./Heading";
 import { useNavigate } from "react-router";
 
 export const Form = () => {
