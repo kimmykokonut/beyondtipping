@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "vite",
+    "start-api": "cd api && source .venv/bin/activate && export FLASK_ENV=production && python -m flask --app api/index run -p 8000",
     "flask-dev": "pip3 install -r requirements.txt && python -m flask --app api/index run -p 8000 --reload",
     "vite-dev": "vite",
     "dev": "concurrently \"vite\" \"npm run flask-dev\"",
@@ -40,5 +42,6 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
-  }
+  },
+  "proxy": "http://localhost:8000"
 }
