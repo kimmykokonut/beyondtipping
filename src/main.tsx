@@ -24,7 +24,7 @@ import henryPic from './assets/img/henry.jpeg';
 
 const navigation: NavigationDir[] = [
   {
-    link: "/restaurants",
+    link: "/restaurant-list",
     label: "restaurant list"
   },
   {
@@ -106,12 +106,12 @@ const router = createBrowserRouter([
         },
       },
       {
-        path: "restaurants/:id",
+        path: "restaurant-list/:id",
         loader: ({ params }) => {
           if (params.id) {
             return getRestaurantById(parseInt(params.id));
           } else {
-            return redirect("/restaurants")
+            return redirect("/restaurant-list")
           }
         },
         element: <RestaurantDetail />,
