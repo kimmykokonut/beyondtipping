@@ -15,7 +15,7 @@ const Hero = () => {
                         <p className="text-xl font-body max-w-md">
                             We've got you covered. Check out our list of tip-free fair-wage restaurants in the PDX area.
                         </p>
-                        <Button to="/restaurants" buttonText="View restaurants" className="mb-8 md:mb-10" />
+                        <Button to="/restaurant-list" buttonText="View restaurants" className="mb-8 md:mb-10" />
                     </div>
 
                     <div className="md:col-span-1">
