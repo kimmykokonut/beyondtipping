@@ -172,7 +172,7 @@ export const Map = () => {
             </div>
             <p className="text-xl text-center font-body max-w mb-10 px-5">find restaurants in PDX that have integrated fare wages and foregone tipping!</p>
             <div className="text-center mb-8 md:mb-10">
-                <Button to="/restaurants" buttonText="view restaurant list" className="mb-8 md:mb-10" />
+                <Button to="/restaurant-list" buttonText="view restaurant list" className="mb-8 md:mb-10" />
             </div>
             <MapContainer center={[45.512794, -122.679565]} zoom={13}>
                 {/* <TileLayer
