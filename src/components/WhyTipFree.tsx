@@ -22,7 +22,7 @@ export default function WhyTipFree() {
     </p>
     <div className="flex justify-center lg:mb-24 md:mb-8 sm:mb-0">
   <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4">
-    <Button to="/restaurants" buttonText="View Restaurant List" className="mb-0" />
+    <Button to="/restaurant-list" buttonText="View Restaurant List" className="mb-0" />
     <Button to="/map" buttonText="View Restaurant Map" />
   </div>
 </div>

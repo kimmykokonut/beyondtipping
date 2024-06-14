@@ -27,7 +27,7 @@ export const Confirmation = () => {
             <br/>
             <div className="flex justify-center lg:mb-24 md:mb-8 sm:mb-0">
   <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 sm:mb-12 lg:mb-8">
-    <Button to="/restaurants" buttonText="return to restaurant list" className="mb-0" />
+    <Button to="/restaurant-list" buttonText="return to restaurant list" className="mb-0" />
     <Button to="/map" buttonText="return to restaurant map" />
   </div>
 </div>
