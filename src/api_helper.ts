@@ -15,7 +15,7 @@ export interface Type {
 // all users can access
 export async function getRestaurants() {
   try {
-    const response = await fetch('http://127.0.0.1:8000/restaurants', {
+    const response = await fetch('/restaurants', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ export async function getRestaurants() {
 // all users can access
 export async function getRestaurantById(id: number) {
   try {
-    const response = await fetch(`http://127.0.0.1:8000/restaurants/${id}`, {
+    const response = await fetch(`/restaurants/${id}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -57,7 +57,7 @@ export async function getRestaurantById(id: number) {
 //currently only admin can POST /restaurants
 export async function createRestaurant(restaurant: Restaurant) {
   try {
-    const response = await fetch('http://127.0.0.1:8000/restaurants', {
+    const response = await fetch('/restaurants', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ export async function createRestaurant(restaurant: Restaurant) {
 }
 export async function editRestaurant(id: number, updated_restaurant: object) {
   try {
-    const response = await fetch(`http://127.0.0.1:8000/restaurants/${id}`, {
+    const response = await fetch(`/restaurants/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -98,7 +98,7 @@ export async function editRestaurant(id: number, updated_restaurant: object) {
 // all users can access-Admin only?
 export async function deleteRestaurant(id: number) {
   try {
-    const response = await fetch(`http://127.0.0.1:8000/restaurants/${id}`, {
+    const response = await fetch(`/restaurants/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -119,7 +119,7 @@ export async function deleteRestaurant(id: number) {
 // all users can access
 export async function getTypes() {
   try {
-    const response = await fetch('http://127.0.0.1:8000/types', {
+    const response = await fetch('/types', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -139,7 +139,7 @@ export async function getTypes() {
 // all users can access
 export async function getTypeById(id: number) {
   try {
-    const response = await fetch(`http://127.0.0.1:8000/types/${id}`, {
+    const response = await fetch(`/types/${id}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -159,7 +159,7 @@ export async function getTypeById(id: number) {
 // all users can access
 export async function createType(new_type: Type) {
   try {
-    const response = await fetch('http://127.0.0.1:8000/types', {
+    const response = await fetch('/types', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -180,7 +180,7 @@ export async function createType(new_type: Type) {
 // all users can access
 export async function editType(id: number, updated_type: object) {
   try {
-    const response = await fetch(`http://127.0.0.1:8000/types/${id}`, {
+    const response = await fetch(`/types/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -201,7 +201,7 @@ export async function editType(id: number, updated_type: object) {
 // all users can access
 export async function deleteType(id: number) {
   try {
-    const response = await fetch(`http://127.0.0.1:8000/types/${id}`, {
+    const response = await fetch(`/types/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
