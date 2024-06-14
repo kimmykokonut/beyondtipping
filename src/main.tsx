@@ -99,7 +99,7 @@ const router = createBrowserRouter([
         element: <Confirmation />
       },
       {
-        path: "restaurants",
+        path: "restaurant-list",
         element: <RestaurantList />,
         loader: () => {
           return getRestaurants();
