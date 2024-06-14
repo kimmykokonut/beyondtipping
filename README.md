@@ -227,6 +227,7 @@ Content-Type: application/json
 ## Stretch Goals
 * Build out Restaurant model (hours, cuisine)
 * User register/login/logout to control access for create, edit, delete restaurant data. (Currently admin access only)
+* Build out url address, currently SPA so if manuall go to /restuarants, I get the API endpoint for GET /restauarants now that React is served statically through Flask. I recognize I need to rename the api endpoints so this is not an issue as well as build the URL.
 
 ## License
 GNU GENERAL PUBLIC LICENSE, see license.md for details
