@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, url_for, request, abort
+from flask import Flask, request, redirect, url_for, request, abort, render_template
 from flask_cors import CORS
 from flask_admin import Admin
 from flask_admin import helpers as admin_helpers
@@ -19,6 +19,10 @@ CORS(app)
 @app.route('/')
 def index():
   return app.send_static_file('index.html')
+
+@app.errorhandler(404)
+def not_found(e):
+    return render_template("index.html")
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 app.config.from_pyfile('config.py')
